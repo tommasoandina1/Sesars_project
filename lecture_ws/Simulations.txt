@@ -1,0 +1,105 @@
+-------- SIMULATION 2 ---------
+Parameters:
+
+self.controller = DWA(
+            dt              = self.dt, 
+            max_num_steps   = 1700,
+            sim_time        = 2.,
+            # how many velocity values to consider in the dynamic window (velocity samples)
+            v_samples       = 10, 
+            w_samples       = 20,
+            goal_dist_tol   = 0.2,
+            collision_tol   = 0.20,
+            velocity_tresh  = 0.6,
+            desired_distance= 0.50,
+            weight_angle    = 0.08,
+            weight_vel      = 0.13,
+            weight_obs      = 0.1,
+            weight_goal     = 0.15,
+            obstacles_map   = [],
+            # ROBOT DEFINITION PARAMETERS
+            init_pose       = init_pose,
+            max_linear_acc  = 0.5,
+            max_ang_acc     = 3.2,
+            max_lin_vel     = 0.22, # m/s
+            min_lin_vel     = 0.0, # m/s
+            max_ang_vel     = 1.5, # rad/s 
+            min_ang_vel     = -1.5, # rad/s 
+            radius          = 0.10, # m
+        )
+
+Grafici in simulazione 12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----- SIMULATIONS TASK 1 -----
+
+Point (5,-3):
+
+self.controller = DWA(
+            dt              = self.dt, 
+            max_num_steps   = 1500,
+            sim_time        = 2.,
+            # how many velocity values to consider in the dynamic window (velocity samples)
+            v_samples       = 10, 
+            w_samples       = 20,
+            goal_dist_tol   = 0.25,
+            collision_tol   = 0.20,
+            velocity_tresh  = .01,
+            desired_distance= .00,
+            weight_angle    = 0.06, # alpha
+            weight_vel      = 0.19, # beta
+            weight_obs      = 0.23, # gamma
+            weight_goal     = .0, # delta
+            obstacles_map   = [],
+            # ROBOT DEFINITION PARAMETERS
+            init_pose       = init_pose,
+            max_linear_acc  = 0.5,
+            max_ang_acc     = 3.2,
+            max_lin_vel     = 0.22, # m/s
+            min_lin_vel     = 0.0, # m/s
+            max_ang_vel     = 1.5, # rad/s 
+            min_ang_vel     = -1.5, # rad/s 
+            radius          = 0.10, # m
+        )
+
+Point (4,5):
+
+
+
+Point (-6,-5):
+
+
+
+Point (-8,8):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
